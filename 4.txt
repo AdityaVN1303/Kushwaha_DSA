@@ -142,6 +142,9 @@ The "s" ids will get squashed / merged to the pick id which is below those "s" i
 23. git reset --hard hashID
 This resets your branch to that hashID commit and deletes all uncommitted changes.
 
+24. git branch -m branchname
+Renames the current branch to branch name.
+
 
 ---
 
