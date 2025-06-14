@@ -1,3 +1,153 @@
 Git Commands 
 
+--- https://learngitbranching.js.org/ ---
 
+
+1. Git init 
+Initialize a empty git repository / folder
+
+2. git status 
+Gives status of added or un added files in the git repository
+Red --- Not added
+Green --- Added and Ready to Commit 
+
+3. git add . / git add filename
+Adds changes made to files / new files to the staging area.
+Like the guests are called on the stage for clicking their photo and saving them in the history of the wedding
+
+4. git commit -m "msg here"
+Adds changes made to the files / new files to the history of the project 
+Like the photographer clicks the photo of the guests and adds them to the history of the wedding
+
+5. git restore --staged filename
+Gets that file outside the staging area
+Back again to the red color. 
+
+6. git log
+Gives entire history of the commits made to the current project / repository
+
+7. git reset hashID
+restores the current repository exactly it was at the time of the commit with the id hashID (tracks back to the previous commits)
+
+8. git stash 
+Whatever changes are there in the staging area are moved to the stash area. (Behind the Scenes). It is not lost.
+Back Stage Example 
+
+9. git stash pop 
+Whatever changes were there in the stash area are returned to the staging area.
+
+10. git stash clear
+Whatever is there in the stash area is cleared / removed
+
+11. git remote add origin "url"
+Connects github url to the current git repository
+By default origin is the name given to all the files/folders you have in your personal account.
+
+12. git remote -v
+Lists all the urls attached to the git folder / repository
+
+13. git push origin master
+master is the branch you want to push the changes
+origin is to which url which you want to push the changes
+This pushes changes to that url.
+Makes changes made in the repo visible to the github url
+
+---
+
+
+Branches ??? 
+All the commits done one after the other are done on top of each other like a branch structure.
+Name of the main branch is by default "main / master"
+The main branch consists of the code that is used / hosted and used by everyone. 
+Other branches consists of different codes (with some changes / errors). 
+
+Head ??? (*)
+Head is simply a pointer pointing to the current branch where you will call git commands and make changes
+Whatever changes you make to the repo with git commands are performed on the head. 
+head simply points to any commit. 
+* is given to the head branch
+
+
+--- 
+
+14. git branch branchname
+Creates new branch and switches to it
+
+15. git checkout branchname
+Switches to that branch Name 
+
+16. git merge branchname
+Merges the branchname branch with the main branch
+
+
+---
+
+// Never make commits / changes to the main branch. Create different branch and do so. 
+
+fork ???
+Copies the repo from other URL to your personal URL. 
+Now you can do whatever you want to , to that repo.
+
+upstream url ???
+From where you have forked the url into your own account is called the upstream url. 
+
+pull request ???
+You create your own copy (fork) of a X project. Name that copy as Y.
+You make U branch in that Y copy
+You make changes to the U branch. 
+Now you want that U branch to merge with the main branch of the X Project. 
+You send a Pull request for that to the owner of the X Project. 
+// One branch can only create one pull request.
+// Good Practice --- Never commit on Main branch of the Y copy of the X Project. 
+// Reason --- Creates mess as the pull request going from Y to X will contain all changes/commits from different branches of Y creating a mess.
+// Hence Good practice is , Always Create branches on the Y Copy Project. And send Pull Requests from those branches to the X project , not from the main branch of the Y Project to the X Project
+
+
+---
+
+17. git clone "repoUrl"
+Copies that repoUrl repository data to current git repo on your device
+
+18. git push origin branchname -f 
+It force pushes the changes.
+Done when the online repo consists of commit that the device repo does not. 
+
+19. git fetch --all --prune
+--all --> all branches
+--prune --> all branches as well that are deleted.
+Fetches the commits on the upstream url's main branch to your personal copy's main branch
+
+20. git reset --hard upstream/main
+Adds the commits on the upstream url's main branch to your personal copy's main branch
+
+21. git pull upstream main 
+Does same as done by the 19,20 commands into a single command.
+
+
+--- 
+
+Squashing commits ???
+Squashing commits is merging all commits into one single commit. 
+
+---
+
+
+22. git rebase -i hashID
+-i ---> interactive environment
+the hashID is given of the commit above which squashing is to be performed. 
+You will then get a list of commit ids on your cmd.
+You need to add "pick / s" to it.
+The "s" ids will get squashed / merged to the pick id which is below those "s" ids.
+
+23. git reset --hard hashID
+This resets your branch to that hashID commit and deletes all uncommitted changes.
+
+
+---
+
+Merge Conflicts ???
+Happens when branch A makes commit at Line 3 and the Branch B makes commit on the same Line 3 and when merged , conflict occurs.
+Git confuses for which commit to take. 
+It needs to be done manually from the github.
+
+---
