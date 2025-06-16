@@ -1,0 +1,65 @@
+--- Introduction to Programming ---
+
+
+
+--- Types of Languages --- 
+
+a. Procedural
+b. Functional
+c. Object Oriented
+
+a. Procedural
+- Specifies a series of well structured steps and procedures to compose a program.
+- Contains a systematic order of statements , functions and commands to complete a task.
+
+b. Functional
+- Writing a program only in pure functions i.e never modify variables , but only create new ones as an output.
+- Used in situations where we have to perform lots of different poperations on the same set of data , like ML. 
+- First class functions ?
+Functions - block of code that can be reused again and again.
+This means they possess the same rights and privileges as other entities like numbers, strings, and objects. eg - getting assigned to variables
+
+c. Object Oriented
+- Revolves around objects
+- Code + Data = Object
+- Developed to make it easier to develop , debug , reuse and maintain software. 
+
+
+Object Oriented ? 
+A collection of integers === Integer Datatype
+A collection of strings === String Datatype
+A collection of strings + integers together === ?
+Custom Datatype === class
+Class is a template for what that Datatype consists of. It consists of properties and methods. 
+Objects are the running instances of that class.
+Objects are the actual Datatypes used in the program which follows the Class template structure.  
+
+----------
+
+--- Static vs Dynamic Languages ---
+
+Compilation ? 
+Conversion of source code into machine code is called compilation.
+
+a. Static 
+- Perform type checking at compile time. 
+- errors will show at compile time. 
+- Declare datatype before you use it.
+- More Control
+
+b. Dynamic
+- Perform Type checing at runtime. 
+- Error might not show till program is run. 
+- No need to declare datatype of variables 
+- Saves time in writing code but might give error at runtime. 
+
+
+----------
+
+--- Memory Types ---
+
+1. Stack 
+2. Heap
+
+----------
+

@@ -1,0 +1,83 @@
+--- Java Introduction ---
+
+
+
+--- How Java Code Executes ? ---
+
+.java file (human readable)
+|
+compiler (entire file)
+|
+.class file (byte code)
+|
+interpreter (line by line)
+|
+Machine Code (0,1)
+
+
+1. Compiler converts human readable code to byte code (language of java , needs jvm to run this)
+2. Interpreter converts byte code to machine code line by line 
+In C++ , the middle step (conversion into byte code) is skipped. 
+
+----------
+
+
+--- What is Platform Independence ? ---
+
+- It means that byte code can run on all operating systems.
+- We need to convert source code into machine code so computer can understand
+- Compiler helps in doing this by turning it into executable code
+- This executable code is a set of instructions for the computer.
+- After compiling C/C++ code we get .exe file which is platform dependent 
+- In Java , we get bytecode , JVM converts this to machine code.
+- Java os platform - independent but JVM is platform Dependent.
+
+----------
+
+
+--- JDK vs JRE vs JVM vs JIT ---
+
+JDK = JRE + other development tools
+JRE = JVM + Library Classes
+JVM = JIT
+
+----------
+
+
+
+
+JDK ---> 
+- Provides environment to develop and run the java program
+- It is a package that includes -
+1. Development tools --- to provide an environment to develop your program
+2. JRE - to execute your program
+3. a compiler - javac
+4. archiver - jar
+5. docs generator - javadoc
+6. interpretor / loader
+
+JRE --->
+- It is a installation package that provides environment to only run the program
+- It consists of ->
+1. Deployment Technologies
+2. User Interface Toolkits 
+3. Integration Libraries
+4. Base Libraries 
+5. jvm
+- After we get the .class file , next things happens at runtime. 
+1. Class loader loads all classes needed to execute the program. 
+2. JVM sends code to byte code verifier to check the format of the code. 
+
+JVM --->
+Interpreter :
+- Line by Line Execution
+- When one method is called many times , it will interpret again and again
+
+JIT ---> 
+- Those methods that are repeated , JIT provides direct machine code so re-interpretation is not required. 
+- Makes execution faster. 
+- Garbage Collector
+
+--- JRE vs JVM ---
+- JRE is a box consisting of JVM + Other extra files required for the JVM for execution of the code. 
+- When JVM needs any help , it asks JRE like asking for any file or library.

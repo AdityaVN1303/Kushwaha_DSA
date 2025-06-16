@@ -1,0 +1,8 @@
+--- Flow of Programming ---
+
+
+
+
+Flowchart ---> Explains Flow of Program 
+Pseudo Code ---> used to Explain the Program without the syntax
+
