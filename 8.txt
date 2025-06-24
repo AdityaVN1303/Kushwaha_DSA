@@ -1,0 +1,86 @@
+----------------- First Java Program ----------------
+
+
+
+
+1. Every file in Java is a class.
+2. The .java file consists of a class named as that of the file.
+3. Class Name starts with capital letter
+4. public used before the class name in java file means that class can be used or accessed from anywhere.
+5. The way java is written is that all the execution starts from the main function.
+6. The .class file generated after compilation in the same file is the byte code which can run on any device with jdk.
+7. What is static ? Some variables do not depends on the objects. They are independent of the objects. They are variables of the class. They are same for all objects and can be changed from any object and changes for all other objects. It is used in main function syntax as the main function needs to run even when the object of the file class is not created. 
+8. Whatever command line arguments you give are stored in the args String array. 
+Eg --- 
+java Main8 30 "Aditya"
+Here the 30 and "Aditya" will get stored in zero and first index of the array args.
+
+9.
+javac -d .. Main8.java
+The -d flag moves the Main8 file's byte code location to a different folder as specified.
+It is good practice to put the source code and the byte code in seperate locations. 
+
+10.
+From where the cmd understands the commands ? java , javac , python , pip , npm , etc. 
+They are all executable files located somewhere. They are a code which executes when called. 
+These commands are just shortcuts for running those files
+The commands just do the double clicks on the files.
+The pc does so using path variables or environment variables.
+The javac will go into the path where the java executable file is present. If not , it will throw error not found. 
+
+11.
+Primitive Data Types --- Any data type which cannot be breaken down into further data type. 
+int
+char
+float (add f)
+double
+long (add L)
+boolean
+Why add L or f ? ---> Because by default the data type is int or double.
+
+12.
+int a = 10;
+a is identifier
+10 is literal.
+
+13.
+int a = 234_000_000
+prints 234000000
+
+14. 
+Type Conversion --- 
+Widening Conversion .
+Implicit Conversion. 
+Automatic conversion happens when
+a. Type should be compaitable in both.
+b. Destination type should be greater than source type.
+
+15. 
+Type Casting --- 
+Manually doing the conversion if sometimes not compaitable. 
+Explicit conversion. 
+Narrowing Conversion .
+int num = (int)(67.55f)
+Extra data is deleted. 
+Compressing bigger value into smaller.
+
+16.
+Type Promotion --- 
+byte b = (byte)(257)
+Max range of byte is 256 
+Reminder of max value is the value that is stored in b.
+Type promotion is done in expression for storage purposes.
+eg ---
+byte b = 50*2
+Above line gives error as java converts the expression 50*2 into a integer and cannot be stored into a byte.
+Type promotion is done into the highest storage data type. 
+
+17.
+Java followss the unicode principle.
+All languages can be printed in java.
+
+18. 
+When you dont know how many times the loop is going to run ---> Use while loop
+Else ---> Use for loop
+
+

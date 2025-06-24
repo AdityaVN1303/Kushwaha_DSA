@@ -1,0 +1,44 @@
+Functions
+
+
+1.
+Function is a block of code.
+
+2. 
+In Java we call functions as method as they are in a class.
+
+3.
+Format of Function--->
+access modifier static/not return_type name (parameter_list){
+    //body
+    return statement;
+}
+
+4.
+Pass Value
+In Java there is only pass by Value
+In Java there is no pass by Reference 
+Parameters are created as the copy of the arguments passed to the functions. A new object is created for each argument passed.
+
+5.
+a. For primitives 
+Pass by Value
+b. For objects and stuff
+Passing value of the reference variable.
+eg --- Both naam and name pointing to the same object in the heap. 
+It means new object will be created in the function as a parameter but it will point to the same object as the name argument.
+In Cpp , however , the reference itself is passed and no new parameter is created.
+
+6.
+Scope --- 
+Function Scope , Block Scope.
+For block scopes , outside values can be used in block , but values initialized in the block remains in the block.
+
+7.
+Shadowing --- 
+The variable of the higher level scope is overriden by the variable at lower level. 
+
+8. 
+int x; ---> Declaring x
+int a = 40; ---> Initializing x
+Scope Begins when value is initialized
